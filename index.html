@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal portfolio - HOMEPAGE</title>
+        <meta name="author" content="Harry Dan" >
+        <meta name="description" content="web developer...">
+        <meta name = "keywords" content="web developer, web developer in Nigeria, best web developer, web development">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <meta name="charset" content="utf-8">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+        <link rel="stylesheet" type="text/css" href="index.css" />
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icon@1.6.0/font/bootstrap-icons.css" />
+  
+        <style>
+          #description{
+            display: none;
+          }
+          
+          .hideDiv{
+            opacity:0;   
+          }
+          
+          @media screen and (min-width:700px){
+              
+           .hideDiv{
+               opacity: 1;
+              }
+          }
+          @media screen and (max-width: 650px){
+              #contactBtn {
+               margin-top:7px;   
+              }
+          }
+          .card{
+            margin:10px;
+          }
+          .navbar-nav > a{
+            margin: 15px;
+            border-radius: 10px;
+            padding:15px;
+          }
+          #profile-pics{
+            width:100%;
+            
+          }
+          .navbar-nav > a:hover{
+            background-color: green;
+            transition: background-color 1s ease;
+          }
+          .active{
+            background-color: red;
+          }
+
+          </style>
+      </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a href="#" class="navbar-brand mr-5 text-warning">Portfolio</a>
+            <button id="navBtn" type="button" class="navbar-toggler" data-toggle="collapse" data-target = "#navbarCollapse"><span class="navbar-toggle-icon" id="nav-icon"><i class="fa fa-bars fa-lg text-secondary"></i></span></button>
+            <div class="collapse navbar-collapse " id="navbarCollapse">
+              <div class="navbar-nav ml-auto pl-4">
+                <a href="index.html" class="nav-item nav-link active text-light ml-3 p-2">Home</a>
+                <a href="project.html" class="nav-item nav-link text-light ml-3 p-2">Projects</a>
+                <a href="contactForm/contact.html" class="nav-item nav-link text-light ml-3 p-2">Contact</a>
+              </div>
+            </div>
+          </nav>
+          
+        <div class="jumbotron container-fluid mt-0 mb-0" id="section"> 
+            <div class="container-fluid">
+                
+                    <div class="container">
+                        <p class="lead text-light text-center">Hi, Am Harry Dan</p>
+                        <h3 class="display-4 lead text-white text-center" id="description">A <span class="text-danger">Full Stack</span> Web Developer</h3>
+                        <p class="lead text-white" id="describe-me"></p>
+                    </div>
+                    
+                </div>
+                <div class="container text-center">
+                    <a class="btn btn-lg bg-danger text-white mr-3" role="button" href="document/Harry Dan resume.docx" download >Download Resume</a>
+                    <a class="btn btn-lg text-white" role="button" id="contactBtn" href="contactForm/contact.html" >Contact Me</a>
+                </div>
+            
+        </div>
+
+
+
+        
+        <div class="container-fluid pb-3" style="background-color: black;">
+          
+          
+          <h3 class="text-center mb-4 pt-3 text-warning" id="services">My Services</h3>
+          <hr class="bg-light"/>
+          <div class="container mt-3">
+              <div class="row">
+                  <div class="col-md-4">
+                    <div class="card bg-transparent">
+                       <p class="text-center mt-2 text-danger"> <span><i class="fa fa-desktop fa-3x"></i></span> </p>
+                        <h4 class="card-title text-center mt-1 text-light">Web development</h4>
+                        <div class="card-body">
+                            <div class="card-text text-light lead">Your brand is your pride. i build amazing websites that will stand you out amongst your competitors.</div>
+                            <p></p>
+                            <button class="btn text-white" id="s-2">See Sample</button>
+                           </div>
+
+                    </div>
+                  </div>
+                  <div class="col-md-4 mt-0  hideDiv">
+                      <div class="card bg-transparent">
+                       <p class="text-center mt-2 text-danger"> <span><i class="fa fa-robot fa-3x"></i></span> </p>
+                          <h4 class="card-title text-center mt-1 text-light ">ChatBots Development</h4>
+                          <div class="card-body">
+                              <p class="card-text lead text-white">Dont keep your customers waiting. i provide a faster way to communicate with your customers using chatbots. </p>
+                              <button class="btn text-white" id="s-1">See Chatbot sample</button>
+                          </div>
+                      </div>
+                      
+               </div>
+               
+               <div class="col-md-4 mt-1 hideDiv">
+                   <div class="card bg-transparent ">
+                       <p class="text-center mt-2 text-danger"> <span><i class="fa fa-desktop fa-3x"></i></span> </p>
+                       <h4 class="card-title text-center mt-1 text-light">Consultancy</h4>
+                       <div class="card-body">
+                           <p class="card-text lead text-white">Are you passionate in starting a career in Technology but dont know how to begin? I offer free consultations to get you on track. </p>
+                           <a class="btn text-white" role="button" href="#contact-form" id="s-3">Contact Me</a>
+                       </div>
+                   </div>
+                      
+               </div>
+              </div>
+          </div>
+
+          <br />
+          <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3 class="text-warning hideDiv">About Me</h3>
+                    <p class="lead text-light hideDiv">A highly motivated software developer with the aim of leveraging
+                      and driving business growth through quality web applications. I have 3 years experience in programming and a solid foundation
+                      in Computer Science. 
+                    </p>
+                </div>
+                
+                <div class="col-md-4 mb-0">
+                    
+                        <h3 class="text-warning">My Skills</h3>
+                        <ul class="text-light hideDiv">
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>Bootstrap</li>
+                          <li>Ajax</li>
+                          <li>Javascript</li>
+                          <li>PHP</li>
+                          <li>SQL</li>
+                          <li>Python</li>
+                          <li>Visual Basic 6.0</li>
+                          <li>Wordpress</li>
+  
+                      </ul>
+                </div>
+                <p class="lead text-white">Am open to Employment and freelancing</p>
+            </div>
+            
+        </div>
+    </div>
+    
+    <footer class="container-fluid mt-0 pb-3" style="background-color: #00001a;">
+      <h3 class="text-center text-danger p-3">Get in touch</h3>
+      <div class="container">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="firstname" class="text-white">Firstname</label>
+            <input type="text" class="form-control" id="firstname" />
+          </div>
+          <div class="form-group">
+            <label for="Lastname" class="text-white">Lastname</label>
+            <input type="text" class="form-control" id="lastname" />
+          </div>
+          <div class="form-group">
+            <label for="email" class="text-white">Email</label>
+            <input type="text" class="form-control" id="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="text-white">Enter your Message</label>
+            <textarea class="form-control" id="message"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-danger" value="Submit" /> 
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
+        <script src="lib/anime.min.js"></script>
+        <script>
+         document.addEventListener("DOMContentLoaded", function () {
+              new TypeIt("#describe-me", {
+                strings: ["I Provide Solutions through quality websites and mobile applications."],
+              }).go();
+            });
+
+            $(document).ready(function(){
+                $(window).scroll(function(i){
+                    $('.hideDiv').each(function(i){
+                        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    if(bottom_of_window > bottom_of_object){
+                        $(this).animate({'opacity':'1'}, 300);
+                    }
+                    })
+                })
+            }) 
+          </script>
+          <script>
+            $('#description').fadeIn(5000);
+            
+            anime({
+              targets: '#services',
+              translateX:120,
+              duration:3000,
+              height:"60px",
+              width:"60px",
+              duration:3000,
+              direction:"alternate",
+              easing:"linear",
+              loop:true
+            })
+          </script>
+          
+    </body>
+</html>

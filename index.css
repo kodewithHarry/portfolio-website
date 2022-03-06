@@ -1,0 +1,40 @@
+#section{
+    
+    background-image: url("Images/bg-01.jpg"), linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+.profile-pics{
+    filter: brightness(60%);
+    max-width: 100%;
+    height: auto;
+    
+}
+nav{
+    background-color: black !important;
+}
+#contactBtn{
+    border-color: green;
+}
+a:active{
+    border: 1px solid;
+}
+#s-1, #s-2, #s-3{
+    border: 1px solid;
+    border-color: green;
+    background-color: black;
+}
+#s-1:hover,#s-2:hover,#s-3:hover{
+    background-color: green;
+    transition: background-color 1s ease;
+} 
+
+
+input[type='text']{
+    border:black;
+}
+#contactBtn:hover{
+    background-color: green;
+    transition: background-color 1s ease;
+}
